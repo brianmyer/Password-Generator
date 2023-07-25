@@ -8,8 +8,8 @@ This web application is used to create a password from randomly selected letters
 
 ## Link
 
-https://brianmyer.github.io/Unique-Password_Generator/
-
+ https://brianmyer.github.io/Unique-Password-Generator/
+ 
 ## Installation
 
 N/A

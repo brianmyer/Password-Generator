@@ -20,13 +20,13 @@ if (confirm('Do you want your password to contain uppercase letters?')) {
 };
 console.log(builtArray)
 
-if (confirm('Do you want your password to contain  numbers?')) {
+if (confirm('Do you want your password to contain numbers?')) {
   builtArray = [...builtArray, ...numbers];
 
 };
 console.log(builtArray)
 
-if (confirm('Do you want your password to contain  special characters?')) {
+if (confirm('Do you want your password to contain special characters?')) {
   builtArray = [...builtArray, ...specialCharacters];
 
 };

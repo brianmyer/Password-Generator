@@ -36,7 +36,7 @@ let password = "";
 
 let passwordLength = prompt('How many characters would you like your password to be?')
 for (let i = 0; i < passwordLength; i++) {
- let randomIndex = Math.floor(Math.random(builtArray)*passwordLength)
+ let randomIndex = Math.floor(Math.random(builtArray)*builtArray.length)
   password += builtArray[randomIndex];
 };
 

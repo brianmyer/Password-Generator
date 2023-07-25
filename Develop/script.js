@@ -9,7 +9,7 @@ let builtArray = [];
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword (){
-
+builtArray = [];
 if (confirm('Do you want your password to contain lowercase letters?')) {
   builtArray = [...builtArray, ...lowerAlphabet];
 };
@@ -34,7 +34,7 @@ console.log(builtArray);
 
 let password = "";
 
-let passwordLength = prompt('How many characters would you like your password to be?')
+let passwordLength = prompt('How many characters (8min-128max) would you like your password to be?')
 for (let i = 0; i < passwordLength; i++) {
  let randomIndex = Math.floor(Math.random(builtArray)*builtArray.length)
   password += builtArray[randomIndex];

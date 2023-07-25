@@ -34,8 +34,9 @@ console.log(builtArray);
 
 let password = "";
 
-for (let i = 0; i < prompt('How many characters would you like your password to be?'); i++) {
-  password = math.floor(math.random()*builtArray.length);
+let passwordLength = prompt('How many characters would you like your password to be?')
+for (let i = 0; i < passwordLength; i++) {
+  password += Math.floor(Math.random(builtArray)*passwordLength);
 };
 
 return password;

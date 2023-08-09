@@ -35,10 +35,19 @@ console.log(builtArray);
 let password = "";
 
 let passwordLength = prompt('How many characters (8min-128max) would you like your password to be?')
-for (let i = 0; i < passwordLength; i++) {
- let randomIndex = Math.floor(Math.random(builtArray)*builtArray.length)
-  password += builtArray[randomIndex];
-};
+console.log(passwordLength)
+if (passwordLength < 8 || passwordLength > 128){
+  alert('Please enter a number between 8-128')
+  passwordLength = prompt('How many characters (8min-128max) would you like your password to be?')
+}
+
+if (passwordLength >= 8 && passwordLength <= 128) {
+
+  for (let i = 0; i < passwordLength; i++) {
+    let randomIndex = Math.floor(Math.random(builtArray)*builtArray.length)
+    password += builtArray[randomIndex];
+  };
+} 
 
 return password;
 }
